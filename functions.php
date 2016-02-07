@@ -76,6 +76,7 @@ function lel_setup() {
 		'default-color' => 'ffffff',
 		'default-image' => '',
 	) ) );
+	add_theme_support('jetpack-comic');
 }
 endif;
 add_action( 'after_setup_theme', 'lel_setup' );
@@ -91,6 +92,7 @@ function lel_content_width() {
 	$GLOBALS['content_width'] = apply_filters( 'lel_content_width', 640 );
 }
 add_action( 'after_setup_theme', 'lel_content_width', 0 );
+
 
 /**
  * Register widget area.
