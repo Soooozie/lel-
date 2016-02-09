@@ -21,14 +21,16 @@
 </head>
 
 <body <?php body_class(); ?>>
-	<div class="header-area full">  
+	<div class="header-area full">
 			<div class="main-page">
 					<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'lel' ); ?></a>
 
 					<header id="masthead" class="site-header inner" role="banner">
+						<div class="site-header-wrapper">
 						<div class="site-branding">
+
 							<?php
-							if ( is_front_page() && is_home() ) : ?>
+							 if ( is_front_page() && is_home() ) : ?>
 								<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 							<?php else : ?>
 								<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
@@ -46,6 +48,7 @@
 							<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'lel' ); ?></button>
 							<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 						</nav><!-- #site-navigation -->
+					</div>
 					</header><!-- #masthead -->
 				</div>
 			</div>
