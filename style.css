@@ -26,7 +26,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 
 }
 .main-page {
-		max-width: 1040px; /*set this max-width to allow responsiveness*/
+		max-width: 100%; /*set this max-width to allow responsiveness*/
 		margin: 0 auto;
 }
 .inner {
@@ -47,6 +47,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 --------------------------------------------------------------*/
 html {
 	font-family: sans-serif;
+	overflow-y: scroll; /* Keeps page centered in all browsers regardless of content height*/
 	-webkit-text-size-adjust: 100%;
 	-ms-text-size-adjust:     100%;
 }
@@ -569,10 +570,24 @@ a:active {
 	max-width: 1080px;
 }
 
+.site-branding{
+	float: left;
+	margin: .2em 0;
+	max-width: 33%;
+}
+
+.site-description{
+	color: #fdfdfa;
+	font-size: 12px;
+	font-size: 1.2rem;
+	line-height: .10;
+	margin: 0;
+}
+
 .site-title {
 	font-size: 15px;
 	font-size: 1.5rem;
-	line-height: .20;
+	line-height: .15;
 	margin: 0 0 .3em;
 }
 
@@ -588,8 +603,11 @@ a:active {
 .main-navigation {
 	clear: both;
 	display: block;
-	float: left;
-	width: 100%;
+	float: right;
+	margin: 0 0;
+	max-width: 50%;
+	text-align: right;
+	text-transform: uppercase;
 }
 
 .main-navigation ul {
@@ -610,11 +628,13 @@ a:active {
 }
 
 .main-navigation ul ul {
+	background: #333;
 	box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
 	float: left;
 	position: absolute;
 	top: 1.5em;
 	left: -999em;
+	text-align: center;
 	z-index: 99999;
 }
 
@@ -624,6 +644,8 @@ a:active {
 }
 
 .main-navigation ul ul a {
+	line-height: 1.25;
+	padding: .6em 10px;
 	width: 200px;
 }
 
