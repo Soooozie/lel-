@@ -578,9 +578,9 @@ a:active {
 
 .site-description{
 	color: #fdfdfa;
-	font-size: 12px;
-	font-size: 1.2rem;
-	line-height: .10;
+	font-size: 8px;
+	font-size: 1.0rem;
+	line-height: .4;
 	margin: 0;
 }
 
@@ -601,13 +601,17 @@ a:active {
 ## Menus
 --------------------------------------------------------------*/
 .main-navigation {
+	color: #fff;
 	clear: both;
 	display: block;
 	float: right;
-	margin: 0 0;
+	font-size: 10px;
+	font-size: 1.0em;
+	margin: 0 0 .3em;
 	max-width: 50%;
 	text-align: right;
 	text-transform: uppercase;
+	line-height: .10;
 }
 
 .main-navigation ul {
@@ -618,12 +622,15 @@ a:active {
 }
 
 .main-navigation li {
-	float: left;
+	display: inline-block;
 	position: relative;
 }
 
 .main-navigation a {
+	color: rgba(255,255,255,.9);
 	display: block;
+	letter-spacing: 1px;
+	padding: 0 16px;
 	text-decoration: none;
 }
 
