@@ -1,19 +1,34 @@
 /* My scratch CSS file */
 
+
 /* Site Main */
-.site-main {
-	margin: 0 auto;
-	max-width: 100%;
-}
+
+
+
 
 /* Header Section */
-
-
-
 /* Site Branding */
 .site-branding {
 	display: inline-block;
 	float: left;
+	margin: 0 0;
+}
+/* Site Title */
+.site-title {
+	margin: 0;
+}
+
+.site-title a {
+	color: #fff;
+	padding: 0;
+	text-decoration: none;
+}
+/* Site Description */
+.site-description {
+	color: #fff;
+	display: inline-block;
+	float: left;
+	margin: 0;
 }
 
 /* Navigation Menu */
@@ -72,4 +87,9 @@
 	left: 5px;
 	right: 5px;
 	z-index: 100000; /* Above WP toolbar */
+}
+
+/* Body */
+body {
+	margin: 0; /* gets rid of small white border issue around the page */
 }
