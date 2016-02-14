@@ -20,12 +20,14 @@
 
 .site-title a {
 	color: #fff;
+	font-family: sans-serif, Arial;
 	padding: 0;
 	text-decoration: none;
 }
 /* Site Description */
 .site-description {
 	color: #fff;
+	font-family: sans-serif, Arial;
 	display: inline-block;
 	float: left;
 	margin: 0;
@@ -42,6 +44,7 @@
 	margin: 0;
 	padding: 0;
 	overflow: hidden;
+	font-family: sans-serif;
 }
 
 .main-navigation li {
