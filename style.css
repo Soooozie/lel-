@@ -1,5 +1,21 @@
 /* My scratch CSS file */
 
+/*clearings*/
+.clear:before,
+.clear:after,
+[class*="content"]:before,
+[class*="content"]:after,
+[class*="site"]:before,
+[class*="site"]:after {
+	content: '';
+	display: table;
+}
+
+.clear:after,
+[class*="content"]:after,
+[class*="site"]:after {
+	clear: both;
+}
 
 /* Site Main */
 
@@ -7,6 +23,17 @@
 
 
 /* Header Section */
+.site-header {
+	background-color: #555;
+	display: block;
+	clear: both;
+	margin: 0;
+	max-width: 100%;
+	box-shadow: 0px 1px 3px grey;
+}
+.site-header-wrapper {
+	margin: 0 auto;
+}
 /* Site Branding */
 .site-branding {
 	display: inline-block;
@@ -16,6 +43,9 @@
 /* Site Title */
 .site-title {
 	margin: 0;
+	font-size: 1.5rem;
+	padding-top: 5px;
+	padding-left: 15px;
 }
 
 .site-title a {
@@ -29,13 +59,21 @@
 	color: #fff;
 	font-family: sans-serif, Arial;
 	display: inline-block;
+	font-size: 1.0rem;
+	font-style: italic;
 	float: left;
 	margin: 0;
+	padding-left: 20px;
 }
 
+.menu-toggle {
+	display: none;
+ }
+
 /* Navigation Menu */
+
 .main-navigation {
-	background: #333;
+	font-size: 17px;
 
 }
 
@@ -51,30 +89,40 @@
 	float: right;
 }
 
-.main-navigation li a {
-	display: inline-block;
+.main-navigation a {
+	display: block;
 	color: white;
 	text-align: center;
 	padding: 14px 16px;
 	text-decoration: none;
+	line-height: 28px;
 }
 /* Add mouse hover color */
-.main-navigation li a:hover {
-	background-color: #111;
+
+.main-navigation a:hover {
+	background-color: #6699ff;
 }
 /* Hides secondary navigation dropdown menus */
+
 .main-navigation ul ul {
-	background: #fe7050;
+	background: #ff0066;
 	color: #fff;
 	display: none;
+	position: absolute; /* Allows separate dropdown function */
 	z-index: 1;
 }
+
+.main-navigation ul ul a {
+	padding: .6em 10px;
+	width: 160px;
+}
+
 /* Shows dropdwon lists when hovering or clicking */
 .main-navigation ul li:hover > ul,
 .main-navigation ul li.focus > ul {
 	display: block;
-	top: 3.2em;
 }
+
 
 /* Screen Reader */
 .screen-reader-text {
@@ -95,4 +143,8 @@
 /* Body */
 body {
 	margin: 0; /* gets rid of small white border issue around the page */
+}
+
+button {
+	display: none; /* Hides Primary Menu Button in header */
 }

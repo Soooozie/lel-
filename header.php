@@ -36,7 +36,7 @@
 						</div><!-- .site-branding -->
 
 						<nav id="site-navigation" class="main-navigation" role="navigation">
-							<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'lel' ); ?></button>
+							<h1 class="menu-toggle"><span class "menu-toggle-icon"></span><?php esc_html_e( 'Primary Menu', 'lel' ); ?></h1>
 							<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 
 						</nav><!-- #site-navigation -->
